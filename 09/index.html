@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelos de Layout</title>
-    <link rel="stylesheet" href="layout_1.css">
     <style>
         /* Estilos básicos para o corpo da página */
         body {
@@ -66,42 +65,6 @@
             text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
             color: #0056b3; /* Cor azul mais escura ao passar o mouse */
         }
-
-        /* Estilos para os botões */
-        button {
-            padding: 14px 25px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 20px;
-            text-align: center;
-            width: 270px;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
-        }
-
-        button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Botão para Fixar Header */
-        .fixo-header {
-            background-color: #4CAF50;
-        }
-
-        /* Botão para Fixar Sidebar */
-        .fixo-sidebar {
-            background-color: #ff5722;
-        }
-
-        /* Botão para Atividade Aula */
-        .atividade-aula {
-            background-color: #9C27B0;
-        }
     </style>
 </head>
 <body>
@@ -109,5 +72,18 @@
     <h1>Layouts CSS</h1>
 
     <div class="links-container">
-        <button class="fixo-header" onclick="window.location.href='./layout_1.html'">Fixar Header</button>
-        <button class="fixo-sidebar" onclick="window.location.href='./layout_2.h_
+        <div id="fixo-link-header" class="caixa">
+            <p><a target="_blank" href="./layout_1.html">Fixar Header</a></p>
+        </div>
+
+        <div id="fixo-link-sidebar" class="caixa">
+            <p><a target="_blank" href="./layout_2.html">Fixar Side Bar</a></p>
+        </div>
+
+        <div id="fixo-link-sidebar" class="caixa">
+            <p><a target="_blank" href="./atividade.html">Atividade Aula</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
