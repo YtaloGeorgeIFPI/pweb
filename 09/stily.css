@@ -1,5 +1,5 @@
 body {
-    background-color:  #61bd8c;
+    background-color:  #87cefa;
 }
 
 #conteudo {
@@ -10,21 +10,21 @@ body {
 }
 
 .caixa{
-    background: red;
+    background: #ff6347;
     margin: 10px;
-    width: 100px;
-    height: 100px;
-    color: #FFFFFF;
+    width: 120px;
+    height: 120px;
+    color: #000000;
 }
 
 #relativo{
-    position: relative;
-    left: 30px;
+    position: absolute;
+    left: 50px;
 }
 
 #absoluto{
     position: absolute;
-    left: 30px;
+    left: 50px;
 }
 
 #fixo{
