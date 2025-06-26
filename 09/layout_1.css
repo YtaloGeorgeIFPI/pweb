@@ -1,10 +1,12 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Garante que o body ocupa a altura total da viewport */
+    background-color: #e0f7fa; /* Fundo azul claro */
+    color: #004d40; /* Cor de texto verde escuro */
 }
 
 #layout1 {
@@ -12,68 +14,68 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 960px;
-    /* Largura máxima para o layout, como na imagem */
     margin: 0 auto;
-    /* Centraliza o layout */
-    border: 1px solid #ccc;
+    border: 1px solid #b0c4de; /* Borda azul clara */
+    border-radius: 12px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 #header1 {
-    background-color: #6a5acd;
-    /* Cor roxa similar à imagem */
+    background-color: #00796b; /* Cor verde escuro */
     color: white;
     padding: 20px;
     text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 #menu1 {
-    background-color: #f08080;
-    /* Cor rosa similar à imagem */
+    background-color: #ff7043; /* Cor laranja */
     padding: 10px;
     display: flex;
     justify-content: space-around;
     color: white;
+    border-bottom: 2px solid #ddd;
 }
 
 #content-wrapper1 {
     display: flex;
     flex-grow: 1;
-    /* Permite que o conteúdo ocupe o espaço restante */
+    padding: 15px;
 }
 
 #left-col1 {
-    background-color: #ffd700;
-    /* Cor amarela similar à imagem */
+    background-color: #ffeb3b; /* Cor amarela suave */
     flex-basis: 25%;
-    /* 25% da largura */
     padding: 15px;
     box-sizing: border-box;
-    /* Inclui padding na largura */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #center-col1 {
-    background-color: #90ee90;
-    /* Cor verde clara similar à imagem */
+    background-color: #81c784; /* Cor verde claro */
     flex-basis: 50%;
-    /* 50% da largura */
     padding: 15px;
     box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #right-col1 {
-    background-color: #ffa07a;
-    /* Cor laranja similar à imagem */
+    background-color: #ff8a65; /* Cor laranja suave */
     flex-basis: 25%;
-    /* 25% da largura */
     padding: 15px;
     box-sizing: border-box;
-
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #footer1 {
-    background-color: #87ceeb;
-    /* Cor azul clara similar à imagem */
+    background-color: #4caf50; /* Cor verde forte */
     padding: 15px;
     text-align: center;
     color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
