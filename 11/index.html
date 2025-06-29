@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -27,20 +26,33 @@
         nav {
             background-color: #00796b;
             color: white;
-            width: 100%;
+            width: 200px; /* Definir largura fixa para o menu */
             padding: 10px 0;
-            text-align: center;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-right: 20px; /* Espaço entre o menu e o conteúdo */
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        nav a:hover {
+            background-color: #004d40;
         }
 
         .content {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             width: 100%;
             max-width: 1200px;
             margin-top: 20px;
@@ -58,6 +70,7 @@
             background-color: #eeeeee;
             padding: 15px;
             border-radius: 8px;
+            margin-left: 20px;
         }
 
         .article {
@@ -109,45 +122,49 @@
         <h1>Portal de Notícias do Piauí</h1>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Economia</a>
-        <a href="#">Clima</a>
-        <a href="#">Turismo</a>
-        <a href="#">Cultura</a>
-    </nav>
-
     <div class="content">
-        <main>
-            <article class="article">
-                <img src="https://www.oitomeia.com.br/wp-content/uploads/2022/05/Tabuleiros-Litoraneos-Piaui.jpg" alt="Economia Piauí">
-                <header>Economia do Piauí: Investimentos e Crescimento</header>
-                <p>O Piauí tem visto um crescimento significativo no setor de investimentos, com destaque para a infraestrutura e o turismo local. Nos últimos anos, novos empreendimentos têm gerado empregos e promovido a economia local.</p>
-                <footer><time datetime="2025-07-10">Publicado em: 10/07/2025</time> - <span>Autor: Ytalo George</span></footer>
-            </article>
+        <!-- Menu de navegação à esquerda -->
+        <nav>
+            <a href="#">Carros</a>
+            <a href="#">Ciência</a>
+            <a href="#">Economia</a>
+            <a href="#">Educação</a>
+        </nav>
 
-            <article class="article">
-                <img src="https://a10mais.com/uploads/imagens/chuvas10-1649697922-1654709897.jpeg" alt="Chuva no Piauí">
-                <header>Clima no Piauí: Impacto das Chuvas e Seca</header>
-                <p>As chuvas no Piauí têm trazido desafios para a agricultura, mas também têm trazido oportunidades de crescimento para o setor agropecuário. Saiba como o clima afeta a economia rural do estado.</p>
-                <footer><time datetime="2025-07-12">Publicado em: 12/07/2025</time> - <span>Autor: Ytalo George</span></footer>
-            </article>
+        <!-- Conteúdo à direita -->
+        <div>
+            <main>
+                <article class="article">
+                    <img src="https://www.oitomeia.com.br/wp-content/uploads/2022/05/Tabuleiros-Litoraneos-Piaui.jpg" alt="Economia Piauí">
+                    <header>Economia do Piauí: Investimentos e Crescimento</header>
+                    <p>O Piauí tem visto um crescimento significativo no setor de investimentos, com destaque para a infraestrutura e o turismo local. Nos últimos anos, novos empreendimentos têm gerado empregos e promovido a economia local.</p>
+                    <footer><time datetime="2025-07-10">Publicado em: 10/07/2025</time> - <span>Autor: Ytalo George</span></footer>
+                </article>
 
-            <article class="article">
-                <img src="https://www.maladeaventuras.com/wp-content/uploads/2021/03/ecoturismo-no-piaui.jpg" alt="Turismo no Piauí">
-                <header>Turismo no Piauí: Crescimento e Oportunidades</header>
-                <p>O turismo no Piauí tem se expandido, com destaque para destinos como o Parque Nacional de Jericoacoara e as belezas naturais do litoral. A expectativa é que o turismo cresça ainda mais nos próximos anos.</p>
-                <footer><time datetime="2025-07-15">Publicado em: 15/07/2025</time> - <span>Autor: Ytalo George</span></footer>
-            </article>
+                <article class="article">
+                    <img src="https://a10mais.com/uploads/imagens/chuvas10-1649697922-1654709897.jpeg" alt="Chuva no Piauí">
+                    <header>Clima no Piauí: Impacto das Chuvas e Seca</header>
+                    <p>As chuvas no Piauí têm trazido desafios para a agricultura, mas também têm trazido oportunidades de crescimento para o setor agropecuário. Saiba como o clima afeta a economia rural do estado.</p>
+                    <footer><time datetime="2025-07-12">Publicado em: 12/07/2025</time> - <span>Autor: Ytalo George</span></footer>
+                </article>
 
-            <article class="article">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4l9biZBI4lOYSrgVa06DcmAxOb7u392ijkA&s" alt="Eventos Culturais no Piauí">
-                <header>Eventos Culturais no Piauí</header>
-                <p>Com uma rica tradição cultural, o Piauí celebra anualmente festivais de música, dança e culinária, que atraem turistas de todo o Brasil. Conheça os principais eventos culturais do estado.</p>
-                <footer><time datetime="2025-07-20">Publicado em: 20/07/2025</time> - <span>Autor: Ytalo George</span></footer>
-            </article>
-        </main>
+                <article class="article">
+                    <img src="https://www.maladeaventuras.com/wp-content/uploads/2021/03/ecoturismo-no-piaui.jpg" alt="Turismo no Piauí">
+                    <header>Turismo no Piauí: Crescimento e Oportunidades</header>
+                    <p>O turismo no Piauí tem se expandido, com destaque para destinos como o Parque Nacional de Jericoacoara e as belezas naturais do litoral. A expectativa é que o turismo cresça ainda mais nos próximos anos.</p>
+                    <footer><time datetime="2025-07-15">Publicado em: 15/07/2025</time> - <span>Autor: Ytalo George</span></footer>
+                </article>
 
+                <article class="article">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4l9biZBI4lOYSrgVa06DcmAxOb7u392ijkA&s" alt="Eventos Culturais no Piauí">
+                    <header>Eventos Culturais no Piauí</header>
+                    <p>Com uma rica tradição cultural, o Piauí celebra anualmente festivais de música, dança e culinária, que atraem turistas de todo o Brasil. Conheça os principais eventos culturais do estado.</p>
+                    <footer><time datetime="2025-07-20">Publicado em: 20/07/2025</time> - <span>Autor: Ytalo George</span></footer>
+                </article>
+            </main>
+        </div>
+
+        <!-- Banner de publicidade à direita -->
         <aside>
             <h3>Banners de Publicidade</h3>
             <img src="https://caminhosmelevem.com/wp-content/uploads/2022/10/COMIDA-TIPICA-PIAUI.jpg" alt="Banner de comida típica do Piauí" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
