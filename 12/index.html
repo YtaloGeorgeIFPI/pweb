@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Atributo Data</title>
+    <script>
+        function mostravalor(event) {
+            var idade = event.target.getAttribute('data-idade');
+            alert('Idade: ' + idade);
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li data-idade="25" onclick="mostravalor(event)">Ytalo George</li>
+        <li data-idade="30" onclick="mostravalor(event)">Daniel Maia</li>
+        <li data-idade="28" onclick="mostravalor(event)">Antonio José</li>
+    </ul>
+</body>
+</html>

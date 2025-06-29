@@ -1,0 +1,5 @@
+
+li[data-idade="30"] {
+    color: red;
+    font-weight: bold;
+}
