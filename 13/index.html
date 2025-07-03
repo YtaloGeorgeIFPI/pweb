@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício CSS3</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        /* Propriedade border-radius */
+        .box {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px; /* Cantos arredondados */
+        }
+
+        /* Propriedade box-sizing */
+        .box-sizing-example {
+            width: 100px;
+            padding: 20px;
+            border: 15px solid red;
+            box-sizing: border-box; /* O box-sizing irá incluir o padding e o border dentro do valor de largura */
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Propriedades CSS3</h1>
+
+    <!-- Exemplo de fieldset e legend -->
+    <fieldset>
+        <legend>Informações do Usuário</legend>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </form>
+    </fieldset>
+
+    <div class="box">
+        <p>Esse é um exemplo de caixa com bordas arredondadas.</p>
+    </div>
+
+    <div class="box-sizing-example">
+        <p>Com o box-sizing: border-box, o padding e a borda são incluídos dentro da largura total de 100px.</p>
+    </div>
+</body>
+</html>
