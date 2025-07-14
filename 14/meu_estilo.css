@@ -32,8 +32,8 @@ h1 {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
-/* Gradiente linear no fundo da página */
+/* Gradiente linear no fundo da página ajustado conforme imagem fornecida */
 body {
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente linear */
+    background: linear-gradient(to right, red, green, blue, purple); /* Gradiente linear ajustado */
     font-family: Arial, sans-serif;
 }
