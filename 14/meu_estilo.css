@@ -66,3 +66,20 @@ body {
     background-color: #fdd835; /* Cor de fundo do segundo box */
     box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.5); /* Sombra mais forte e maior */
 }
+
+/* Estilos para o botão de navegação */
+button {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
