@@ -46,8 +46,8 @@ body {
 }
 
 .shadow-box {
-    width: 200px;
-    height: 100px;
+    width: 300px; /* Aumentando o tamanho dos cards */
+    height: 150px; /* Aumentando a altura */
     display: flex;
     justify-content: center;
     align-items: center;
