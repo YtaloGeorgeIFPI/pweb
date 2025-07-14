@@ -1,0 +1,39 @@
+
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da caixa */
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background: rgba(0, 255, 0, 0.5); /* Transparência */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilo do título */
+h1 {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+
+/* Estilo da imagem com borda */
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Gradiente linear no fundo da página */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente linear */
+    font-family: Arial, sans-serif;
+}
