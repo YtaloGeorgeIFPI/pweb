@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,29 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #007BFF;
-            --primary-dark: #0056b3;
-            --background-light: #F8F9FA;
-            --background-dark: #E9ECEF;
-            --text-color: #343A40;
-            --border-color: #DEE2E6;
-            --shadow-light: rgba(0, 0, 0, 0.05);
-            --shadow-medium: rgba(0, 0, 0, 0.1);
-            --accent-light: #CCEEFF;
+            --primary-color: #FF7A00; /* Laranja vibrante */
+            --primary-dark: #CC6300;
+            --background-light: #F5F7FA;
+            --background-dark: #E0E4E9;
+            --text-color: #2B2D42;
+            --border-color: #DDD;
+            --accent-light: #FFE4CC;
             --secondary-color: #28A745;
             --secondary-dark: #1E7E34;
-            --button-text-color: #FFFFFF;
+            --button-bg-initial: #FFF3E6; /* Fundo mais claro */
+            --button-border-initial: #FFB066; /* Laranja claro */
+            --button-text-initial: #CC6300;
+            --button-bg-hover: #FF7A00;
+            --button-text-hover: #FFFFFF;
+            --button-shadow-hover: 0 8px 20px rgba(255, 122, 0, 0.4);
+            --shine-gradient: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
             --card-bg: #FFFFFF;
             --card-border: #E0E6EB;
             --card-shadow-initial: 0 4px 15px rgba(0, 0, 0, 0.06);
-            --card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.12);
-            --button-bg-initial: #F0F2F5;
-            --button-border-initial: #D6DCE0;
-            --button-text-initial: #495057;
-            --button-bg-hover: var(--primary-color);
-            --button-text-hover: #FFFFFF;
-            --button-shadow-hover: 0 8px 20px rgba(0, 123, 255, 0.3);
-            --shine-gradient: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
         }
 
         body {
@@ -163,6 +158,7 @@
             overflow: hidden;
         }
 
+        /* Botões com novo design */
         .caixa a.button {
             display: flex;
             align-items: center;
@@ -171,19 +167,16 @@
             height: 100%;
             padding: 30px;
             text-decoration: none;
-            font-size: 1.4em;
+            font-size: 1.3em;
             font-weight: 600;
             color: var(--button-text-initial);
             background-color: var(--button-bg-initial);
-            border: 1px solid var(--button-border-initial);
-            border-radius: 12px;
-            box-shadow: var(--card-shadow-initial);
-            transition: all 0.3s ease;
+            border: 2px solid var(--button-border-initial);
+            border-radius: 50px; /* Arredondado estilo pílula */
+            box-shadow: 0 4px 12px rgba(255, 122, 0, 0.15);
+            transition: all 0.3s ease, transform 0.2s ease;
             position: relative;
             overflow: hidden;
-            z-index: 1;
-            transform: translateZ(0);
-            min-height: 80px; 
         }
 
         .caixa a.button::before {
@@ -195,7 +188,6 @@
             height: 100%;
             background: var(--shine-gradient);
             transition: transform 0.6s ease;
-            z-index: 0;
         }
 
         .caixa a.button:hover::before {
@@ -205,7 +197,7 @@
         .caixa a.button:hover {
             background-color: var(--button-bg-hover);
             color: var(--button-text-hover);
-            transform: translateY(-5px);
+            transform: translateY(-3px) scale(1.05);
             box-shadow: var(--button-shadow-hover);
             border-color: var(--button-bg-hover);
         }
@@ -283,84 +275,38 @@
 
     <div class="profile-section">
         <div class="profile-image-container">
-            
+            <!-- Foto do perfil pode ser inserida aqui -->
         </div>
         <h2>Ytalo George da Conceição Silva</h2>
     </div>
 
-    <h1></h1> <div class="links-container">
-        <div class="caixa">
-            <a target="_blank" href="./01/index.html" class="button">Atividade 01 - Links</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./02/index.html" class="button">Atividade 02 - Mais Tags HTML</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./03/index.html" class="button">Atividade 03 - Tabelas HTML</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./04/index.html" class="button">Atividade 04 - Formulário</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./projeto01/index.html" class="button">Trabalho 01 - Site JM Viagens</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./05 - Css/index.html" class="button">Atividade 05 - Css Inline</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./06 - Tag Div e Span/index.html" class="button">Atividade 06 - Tag Div e Span</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./07/index.html" class="button">Atividade 07 - Famílias de Fontes</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./08/index.html" class="button">Atividade 08 - Box Model</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./09/index.html" class="button">Atividade 09 - Posicionamentos</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./10/index.html" class="button">Atividade 10 - Nav, Header, Footer</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./11/index.html" class="button">Atividade 11 - Article, Section, Time, Aside</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./12/index.html" class="button">Atividade 12 - Atributo Data</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./13/index.html" class="button">Atividade 13 - Normalize CSS3</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./14/index.html" class="button">Atividade 14 - Transparência, Sombra, Gradiente</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./15/index.html" class="button">Atividade 15 - Transition-Animation</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./16/atividade.html" class="button">Atividade 16 - Design Responsivo Bootstrap</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./17/bootstrap.html" class="button">Atividade 17 - Sistema de Grid</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./18/container.html" class="button">Atividade 18 - Formulários e Tabelas</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./19/container.html" class="button">Atividade 19 - Botões Imagens Responsivas</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./20/container.html" class="button">Atividade 20 - Barra de Navegação Modal Window</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./21/container.html" class="button">Atividade 21 - Alert, Tooltip, Popover</a>
-        </div>
-        <div class="caixa">
-            <a target="_blank" href="./22/index.html" class="button">Atividade 22 - Javascript</a>
-        </div>
-         <div class="caixa">
-            <a target="_blank" href="./23/index.html" class="button">Atividade 23 - Manipulação de arrays</a>
-        </div>
+    <h1></h1> 
+    <div class="links-container">
+        <div class="caixa"><a target="_blank" href="./trabalho final/index.html" class="button">Atividade Final</a></div>
+        <div class="caixa"><a target="_blank" href="./01/index.html" class="button">Atividade 01 - Links</a></div>
+        <div class="caixa"><a target="_blank" href="./02/index.html" class="button">Atividade 02 - Mais Tags HTML</a></div>
+        <div class="caixa"><a target="_blank" href="./03/index.html" class="button">Atividade 03 - Tabelas HTML</a></div>
+        <div class="caixa"><a target="_blank" href="./04/index.html" class="button">Atividade 04 - Formulário</a></div>
+        <div class="caixa"><a target="_blank" href="./projeto01/index.html" class="button">Trabalho 01 - Site JM Viagens</a></div>
+        <div class="caixa"><a target="_blank" href="./05 - Css/index.html" class="button">Atividade 05 - Css Inline</a></div>
+        <div class="caixa"><a target="_blank" href="./06 - Tag Div e Span/index.html" class="button">Atividade 06 - Tag Div e Span</a></div>
+        <div class="caixa"><a target="_blank" href="./07/index.html" class="button">Atividade 07 - Famílias de Fontes</a></div>
+        <div class="caixa"><a target="_blank" href="./08/index.html" class="button">Atividade 08 - Box Model</a></div>
+        <div class="caixa"><a target="_blank" href="./09/index.html" class="button">Atividade 09 - Posicionamentos</a></div>
+        <div class="caixa"><a target="_blank" href="./10/index.html" class="button">Atividade 10 - Nav, Header, Footer</a></div>
+        <div class="caixa"><a target="_blank" href="./11/index.html" class="button">Atividade 11 - Article, Section, Time, Aside</a></div>
+        <div class="caixa"><a target="_blank" href="./12/index.html" class="button">Atividade 12 - Atributo Data</a></div>
+        <div class="caixa"><a target="_blank" href="./13/index.html" class="button">Atividade 13 - Normalize CSS3</a></div>
+        <div class="caixa"><a target="_blank" href="./14/index.html" class="button">Atividade 14 - Transparência, Sombra, Gradiente</a></div>
+        <div class="caixa"><a target="_blank" href="./15/index.html" class="button">Atividade 15 - Transition-Animation</a></div>
+        <div class="caixa"><a target="_blank" href="./16/atividade.html" class="button">Atividade 16 - Design Responsivo Bootstrap</a></div>
+        <div class="caixa"><a target="_blank" href="./17/bootstrap.html" class="button">Atividade 17 - Sistema de Grid</a></div>
+        <div class="caixa"><a target="_blank" href="./18/container.html" class="button">Atividade 18 - Formulários e Tabelas</a></div>
+        <div class="caixa"><a target="_blank" href="./19/container.html" class="button">Atividade 19 - Botões Imagens Responsivas</a></div>
+        <div class="caixa"><a target="_blank" href="./20/container.html" class="button">Atividade 20 - Barra de Navegação Modal Window</a></div>
+        <div class="caixa"><a target="_blank" href="./21/container.html" class="button">Atividade 21 - Alert, Tooltip, Popover</a></div>
+        <div class="caixa"><a target="_blank" href="./22/index.html" class="button">Atividade 22 - Javascript</a></div>
+        <div class="caixa"><a target="_blank" href="./23/index.html" class="button">Atividade 23 - Manipulação de arrays</a></div>
     </div>
 
 </body>
